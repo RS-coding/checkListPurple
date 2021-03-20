@@ -13,7 +13,10 @@ html{font-size:62.5%;}
 body{
     font-family: 'Open Sans',sans-serif;
     letter-spacing: .2rem;   
-    display: flex;
+    display: grid;
+
+    grid-template-rows: 4rem 2fr 4rem 1fr;
+    grid-template-columns: repeat(3,1fr);
 }
 
 body,html{
@@ -35,6 +38,8 @@ ion-icon{
 }
 
 .todo-list__app{
+    grid-column: 2/3;
+    grid-row:2/3;
    background-color:rgb(247, 247, 247);
    border-radius: 3px;
    box-shadow: 2px 2px 15px rgba(77, 77, 77, .5);
@@ -252,3 +257,108 @@ input[type="submit"]:hover {
     outline:none;
     border:none;
 }
+
+/*Footer*/
+
+.footer {
+    color: #fff;
+     background-color: #1b2b34;
+    grid-column: 1/4;
+    grid-row: 4/5;
+    padding: 2rem 4rem;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title p {
+    position: relative;
+
+    font-size: 1.9rem;
+    padding: 1rem;
+}
+
+.subtitle p {
+
+    text-align: center;
+
+}
+
+.subtitle .text {
+
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+.subtitle .text2 {
+    font-size: 1.2rem;
+    padding: 3rem 1rem 1rem 1rem;
+}
+
+.my-name {
+    color: #a6dcef;
+}
+
+.social-media-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding-top: .5rem;
+}
+
+.social-media-list li {
+    padding: 0 1rem;
+
+    cursor: pointer;
+}
+
+i {
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 0 .5rem;
+
+}
+
+.fas.fa-mug-hot {
+    font-size: 2.5rem;
+    color: #fff;
+    border-radius: 50%;
+    border: 1px dashed #fff;
+    padding: 1.2rem;
+    margin: .5rem;
+}
+
+.fab.fa-twitter {
+    color: #CC99C9;
+}
+
+.fab.fa-github {
+    color: #9EC1CF;
+}
+
+.fab.fa-behance {
+    color: #9EE09E;
+}
+
+.fab.fa-linkedin-in {
+    color: #FDFD97;
+}
+
+.fab.fa-codepen {
+    color: #FEB144;
+}
+
+.fas.fa-desktop {
+    color: #FF6663;
+}
+
