@@ -1,4 +1,4 @@
 # checkListPurple
 
-To do List app with Pure JavaScript 
+To do List app with Vanilla JavaScript 
 
